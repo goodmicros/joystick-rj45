@@ -1,0 +1,271 @@
+(export 
+  (version D) 
+  (design 
+    (source /home/netl/projects/DB9-rj45-breakout/DB9-rj45-breakout.sch) 
+    (date "pe  6. elokuuta 2021 12.09.59") 
+    (tool "Eeschema 5.1.5+dfsg1-2build2") 
+    (sheet 
+      (number 1) 
+      (name /) 
+      (tstamps /) 
+      (title_block 
+        (title) 
+        (company) 
+        (rev) 
+        (date) 
+        (source commodore-adapter.sch) 
+        (comment 
+          (number 1) 
+          (value "")) 
+        (comment 
+          (number 2) 
+          (value "")) 
+        (comment 
+          (number 3) 
+          (value "")) 
+        (comment 
+          (number 4) 
+          (value ""))))) 
+  (components 
+    (comp 
+      (ref CN1) 
+      (value 1x9) 
+      (footprint connectors:DB9-slim-female) 
+      (libsource 
+        (lib pin_headers) 
+        (part 1x9) 
+        (description "")) 
+      (sheetpath 
+        (names /) 
+        (tstamps /)) 
+      (tstamp 5FBFEB21)) 
+    (comp 
+      (ref CN2) 
+      (value 1x8) 
+      (footprint modular-jack:RJHSE-5080) 
+      (libsource 
+        (lib pin_headers) 
+        (part 1x8) 
+        (description "")) 
+      (sheetpath 
+        (names /) 
+        (tstamps /)) 
+      (tstamp 5FBFEFE7)) 
+    (comp 
+      (ref SW1) 
+      (value spdt) 
+      (footprint switch:100SP1T1B4M2QE) 
+      (libsource 
+        (lib switches) 
+        (part spdt) 
+        (description "")) 
+      (sheetpath 
+        (names /) 
+        (tstamps /)) 
+      (tstamp 5FD40BAE))) 
+  (libparts 
+    (libpart 
+      (lib pin_headers) 
+      (part 1x8) 
+      (fields 
+        (field 
+          (name Reference) CN) 
+        (field 
+          (name Value) 1x8)) 
+      (pins 
+        (pin 
+          (num 1) 
+          (name ~) 
+          (type BiDi)) 
+        (pin 
+          (num 2) 
+          (name ~) 
+          (type BiDi)) 
+        (pin 
+          (num 3) 
+          (name ~) 
+          (type BiDi)) 
+        (pin 
+          (num 4) 
+          (name ~) 
+          (type BiDi)) 
+        (pin 
+          (num 5) 
+          (name ~) 
+          (type BiDi)) 
+        (pin 
+          (num 6) 
+          (name ~) 
+          (type BiDi)) 
+        (pin 
+          (num 7) 
+          (name ~) 
+          (type BiDi)) 
+        (pin 
+          (num 8) 
+          (name ~) 
+          (type BiDi)))) 
+    (libpart 
+      (lib pin_headers) 
+      (part 1x9) 
+      (fields 
+        (field 
+          (name Reference) CN) 
+        (field 
+          (name Value) 1x9)) 
+      (pins 
+        (pin 
+          (num 1) 
+          (name ~) 
+          (type BiDi)) 
+        (pin 
+          (num 2) 
+          (name ~) 
+          (type BiDi)) 
+        (pin 
+          (num 3) 
+          (name ~) 
+          (type BiDi)) 
+        (pin 
+          (num 4) 
+          (name ~) 
+          (type BiDi)) 
+        (pin 
+          (num 5) 
+          (name ~) 
+          (type BiDi)) 
+        (pin 
+          (num 6) 
+          (name ~) 
+          (type BiDi)) 
+        (pin 
+          (num 7) 
+          (name ~) 
+          (type BiDi)) 
+        (pin 
+          (num 8) 
+          (name ~) 
+          (type BiDi)) 
+        (pin 
+          (num 9) 
+          (name ~) 
+          (type BiDi)))) 
+    (libpart 
+      (lib switches) 
+      (part spdt) 
+      (fields 
+        (field 
+          (name Reference) SW) 
+        (field 
+          (name Value) spdt)) 
+      (pins 
+        (pin 
+          (num 1) 
+          (name no) 
+          (type BiDi)) 
+        (pin 
+          (num 2) 
+          (name c) 
+          (type BiDi)) 
+        (pin 
+          (num 3) 
+          (name nc) 
+          (type BiDi))))) 
+  (libraries 
+    (library 
+      (logical pin_headers) 
+      (uri /home/netl/projects/kicad-library/pin_headers.lib)) 
+    (library 
+      (logical switches) 
+      (uri /home/netl/projects/kicad-library/switches.lib))) 
+  (nets 
+    (net 
+      (code 1) 
+      (name "Net-(CN2-Pad7)") 
+      (node 
+        (ref SW1) 
+        (pin 2)) 
+      (node 
+        (ref CN2) 
+        (pin 7))) 
+    (net 
+      (code 2) 
+      (name /5V) 
+      (node 
+        (ref CN2) 
+        (pin 8)) 
+      (node 
+        (ref CN1) 
+        (pin 7))) 
+    (net 
+      (code 3) 
+      (name "Net-(CN1-Pad5)") 
+      (node 
+        (ref CN1) 
+        (pin 5))) 
+    (net 
+      (code 4) 
+      (name /GND) 
+      (node 
+        (ref CN1) 
+        (pin 8)) 
+      (node 
+        (ref CN2) 
+        (pin 1))) 
+    (net 
+      (code 5) 
+      (name /up) 
+      (node 
+        (ref CN1) 
+        (pin 1)) 
+      (node 
+        (ref CN2) 
+        (pin 2)) 
+      (node 
+        (ref SW1) 
+        (pin 1))) 
+    (net 
+      (code 6) 
+      (name /down) 
+      (node 
+        (ref CN1) 
+        (pin 2)) 
+      (node 
+        (ref CN2) 
+        (pin 3))) 
+    (net 
+      (code 7) 
+      (name /left) 
+      (node 
+        (ref CN1) 
+        (pin 3)) 
+      (node 
+        (ref CN2) 
+        (pin 4))) 
+    (net 
+      (code 8) 
+      (name /right) 
+      (node 
+        (ref CN2) 
+        (pin 5)) 
+      (node 
+        (ref CN1) 
+        (pin 4))) 
+    (net 
+      (code 9) 
+      (name /a) 
+      (node 
+        (ref CN2) 
+        (pin 6)) 
+      (node 
+        (ref CN1) 
+        (pin 6))) 
+    (net 
+      (code 10) 
+      (name /b) 
+      (node 
+        (ref CN1) 
+        (pin 9)) 
+      (node 
+        (ref SW1) 
+        (pin 3)))))

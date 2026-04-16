@@ -1,0 +1,60 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# pin_headers_1x8
+#
+DEF pin_headers_1x8 CN 0 40 Y Y 1 F N
+F0 "CN" 100 400 50 H V C CNN
+F1 "pin_headers_1x8" 0 400 50 H I C CNN
+F2 "" 0 300 50 H I C CNN
+F3 "" 0 100 50 H I C CNN
+DRAW
+S 100 350 200 -450 0 1 0 f
+X ~ 1 0 300 100 R 50 50 1 1 B
+X ~ 2 0 200 100 R 50 50 1 1 B
+X ~ 3 0 100 100 R 50 50 1 1 B
+X ~ 4 0 0 100 R 50 50 1 1 B
+X ~ 5 0 -100 100 R 50 50 1 1 B
+X ~ 6 0 -200 100 R 50 50 1 1 B
+X ~ 7 0 -300 100 R 50 50 1 1 B
+X ~ 8 0 -400 100 R 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# pin_headers_1x9
+#
+DEF pin_headers_1x9 CN 0 40 Y Y 1 F N
+F0 "CN" 100 400 50 H V C CNN
+F1 "pin_headers_1x9" 0 400 50 H I C CNN
+F2 "" 0 300 50 H I C CNN
+F3 "" 0 100 50 H I C CNN
+DRAW
+S 100 350 200 -550 0 1 0 f
+X ~ 1 0 300 100 R 50 50 1 1 B
+X ~ 2 0 200 100 R 50 50 1 1 B
+X ~ 3 0 100 100 R 50 50 1 1 B
+X ~ 4 0 0 100 R 50 50 1 1 B
+X ~ 5 0 -100 100 R 50 50 1 1 B
+X ~ 6 0 -200 100 R 50 50 1 1 B
+X ~ 7 0 -300 100 R 50 50 1 1 B
+X ~ 8 0 -400 100 R 50 50 1 1 B
+X ~ 9 0 -500 100 R 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# switches_spdt
+#
+DEF switches_spdt SW 0 40 N N 1 F N
+F0 "SW" 0 160 50 H V C CNN
+F1 "switches_spdt" 0 100 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 50 100 -50 0 N
+X no 1 100 0 50 L 50 50 1 1 B
+X c 2 -100 0 50 R 50 50 1 1 B
+X nc 3 100 100 50 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+#End Library
