@@ -1,4 +1,4 @@
-130427889002532
+132204591609291
 PCB
 M3.5
 
@@ -253,6 +253,13 @@ YK4410403000G
 4
 d-sub
 DB9 board edge
+
+
+0
+9
+9
+d-sub
+DB9 female board edge
 
 
 0

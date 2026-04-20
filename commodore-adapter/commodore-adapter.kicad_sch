@@ -721,7 +721,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "d-sub:DB9 board edge"
+		(property "Footprint" "d-sub:DB9 female board edge"
 			(at 152.4 91.44 0)
 			(effects
 				(font
